@@ -3,8 +3,8 @@
 #### Q1. What is web identity federation?
 
 - [ ] Use of AWS IAM User tokens to log in as a Google or Facebook user.
-- [x] Use of an identity provider like Google or Facebook to become an AWS IAM User.
-- [ ] Use of an identity provider like Google or Facebook to exchange for temporary AWS security credentials.
+- [ ] Use of an identity provider like Google or Facebook to become an AWS IAM User.
+- [x] Use of an identity provider like Google or Facebook to exchange for temporary AWS security credentials.
 - [ ] Use of AWS STS Tokens to log in as a Google or Facebook use.
 
 #### Q2. Your API requires the ability to stay online during AWS regional failures. Your API does not store any state, it only aggregates data from other sources - you do not have a database.
@@ -52,8 +52,8 @@ What might be the issue?
 
 What's the best design for this system, using DynamoDB?
 
-- [ ] DynamoDB table with roughly equal read and write throughput, with EIastiCache caching.
-- [x] DynamoDB table with 100x higher read than write throughput, with CloudFront caching.
+- [x] DynamoDB table with roughly equal read and write throughput, with EIastiCache caching.
+- [ ] DynamoDB table with 100x higher read than write throughput, with CloudFront caching.
 - [ ] DynamoDB table with roughly equal read and write throughput, with CloudFront caching.
 - [ ] DynamoDB table with 100x higher read than write throughput, with E|astiCache caching.
 
@@ -67,8 +67,8 @@ What's the best design for this system, using DynamoDB?
 #### Q9. When thinking of DynamoDB, what are true of Local Secondary Key properties?
 
 - [ ] Only the partition key can be different from the table
-- [ ] Only the sort key can be different from the table
-- [x] Either the partition key or the sort key can be different from the table, but not both
+- [x] Only the sort key can be different from the table
+- [ ] Either the partition key or the sort key can be different from the table, but not both
 - [ ] The partition key and sort key can be different from the table
 
 #### Q10. If you want CIoudFormation stack status updates to show up in a continuous delivery system in as close to real-time as possible, how would you achieve this?
@@ -168,8 +168,8 @@ What is the most likely problem?
 
 What is a good way to automate a stack to meet these requirements?
 
-- [ ] Use CloudFormation Nested Stack Templates, with three child stacks to represent the three logical layers of your cloud.
-- [x] Use OpsWorks Stacks with three layers to model the layering in your stack.
+- [x] Use CloudFormation Nested Stack Templates, with three child stacks to represent the three logical layers of your cloud.
+- [ ] Use OpsWorks Stacks with three layers to model the layering in your stack.
 - [ ] Use AWS Config to declare a configuration set that AWS should roll out to your cloud.
 - [ ] Use Elastic Beanstalk Linked Applications, passing the important DNS entries between layers using the metadata interface.
 
@@ -184,5 +184,5 @@ What is a good way to automate a stack to meet these requirements?
 
 - [ ] Worker tiers pull jobs from JSON
 - [ ] Worker tiers pull jobs from HTTP
-- [x] Worker tiers pull jobs from SNS
-- [ ] Worker tiers pull jobs from SQ
+- [ ] Worker tiers pull jobs from SNS
+- [x] Worker tiers pull jobs from SQ

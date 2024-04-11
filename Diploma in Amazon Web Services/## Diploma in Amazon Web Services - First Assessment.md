@@ -82,8 +82,8 @@
 
 - [ ] Redshift
 - [ ] Aurora
-- [x] S3
-- [ ] DynamoDB
+- [ ] S3
+- [x] DynamoDB
 
 #### Q13. How would a system administrator add an additional layer of login security to a user's AWS Management Console?
 
